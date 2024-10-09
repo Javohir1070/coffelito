@@ -1,0 +1,28 @@
+.site-header {
+    padding: 40px;
+    background-image: url(../images/bg-orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    @include display($space:space-between);
+}
+.header__logo-link {
+    display: inline-block;
+}
+
+.header__list {
+  @include display($space:start);
+    gap: 40px;
+}
+
+
+.navbar__link {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.06px;
+    letter-spacing: 1px;
+    color: #333333;
+    
+}
