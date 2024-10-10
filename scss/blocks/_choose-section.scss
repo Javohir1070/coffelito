@@ -1,9 +1,11 @@
 .choose-section {
+    position: relative;
+    height: 700px;
     padding: 50px ;
-    background-image: url(../images/choose-bg.png);
+    background-image:  url(../../images/choose-img4.png), url(../images/choose-bg.png)  ;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:   140px 144px, cover ;
+    background-position: left ;
 }
 
 .choose__content-wrapper {
@@ -27,7 +29,10 @@
     color: white;
 }
 .choose__list {
-    @include display($space:space-between);   
+    @include display($space:start);   
+    gap: 30px;
+    position: absolute;
+
 }
 .choose__item {
     width: 410px;
