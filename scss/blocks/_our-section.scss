@@ -17,16 +17,13 @@
 }
 .our {
     @include display($space:space-between);
+
 }
-.our:nth-child(3){
-    @include display($space:space-between);
-    flex-direction: row-reverse;
-    
-}
-.our:nth-child(5){
+.our:nth-child(even){
     @include display($space:space-between);
     flex-direction: row-reverse;
 }
+
 
 .our__content-wrapper {
     width: 453px;
